@@ -1,0 +1,51 @@
+.ContactList {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .ContactList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    width: 697px;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .ContactList {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+
+    max-width: calc(100vw - 48px);
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    padding: 0px 30px;
+
+    list-style: none;
+  }
+}
+
+@media screen and (min-width: 1475px) {
+  .ContactList {
+    grid-gap: 40px;
+  }
+}
