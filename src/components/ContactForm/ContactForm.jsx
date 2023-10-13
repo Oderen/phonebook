@@ -47,7 +47,6 @@ const ContactForm = ({ sendDataToApp }) => {
 
     if (onDuplicateCheck(name.value)) {
       e.currentTarget.reset();
-      // name.focus() || number.focus()
       Notiflix.Notify.failure(`${name.value} is already in contacts`);
       return;
     }

@@ -1,6 +1,7 @@
-.contatcsContainer {
-  width: 100%;
-  padding: 20px;
+.contatcs {
+  padding: 30px 0px;
+
+  background-color: rgb(246, 241, 241);
 }
 
 /* No Contacts Text */

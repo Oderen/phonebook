@@ -11,11 +11,12 @@ export default function Contact({ contacts, onDelete }) {
             <h3 className={css.contact__title}>Contact {index + 1}</h3>
             <div className={css['inner-block']}>
               <p className={css.contact__text}>
-                <span style={{ fontWeight: 700 }}>Name: </span>
+                <span style={{ fontWeight: 700, marginRight: 10 }}>Name: </span>
                 {name}
               </p>
               <p className={css.contact__text}>
-                <span style={{ fontWeight: 700 }}>Phone:</span> {phone}
+                <span style={{ fontWeight: 700, marginRight: 10 }}>Phone:</span>{' '}
+                {phone}
               </p>
               <button
                 className={css.contact__deleteButton}

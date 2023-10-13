@@ -65,7 +65,7 @@ export const registerUser = createAsyncThunk(
   async credentials => {
     try {
       const { data } = await axios.post('/users/register', credentials);
-      console.log('data', data);
+
       token.set(data.token);
 
       const name = data.user.email.split('@')[0];
